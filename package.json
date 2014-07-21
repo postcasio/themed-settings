@@ -1,13 +1,12 @@
 {
   "name": "themed-settings",
   "main": "./lib/themed-settings",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Make the settings view match your Atom UI theme.",
   "repository": "https://github.com/postcasio/themed-settings",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
