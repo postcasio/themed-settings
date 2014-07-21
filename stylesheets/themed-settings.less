@@ -30,13 +30,21 @@ body .settings-view {
 	.editor-container .editor.mini {
 		background: @input-background-color;
 		border: 1px solid @input-border-color;
+		color: @text-color-highlight;
 		.selection .region {
 			background-color: lighten(@input-background-color, 10%);
+		}
+		.cursor {
+			border-color: @text-color-highlight;
 		}
 		&.is-focused {
 			background: lighten(@input-background-color, 5%);
 			border: 1p solid @input-border-color;
+			.cursor {
+				border-color: @text-color-highlight;
+			}
 		}
+
 	}
 
 	.text, .text-subtle {
