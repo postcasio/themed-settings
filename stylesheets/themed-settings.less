@@ -30,7 +30,9 @@ body .settings-view {
 	.editor-container .editor.mini {
 		background: @input-background-color;
 		border: 1px solid @input-border-color;
-		color: @text-color-highlight;
+		.text {
+			color: @text-color-highlight;
+		}
 		.selection .region {
 			background-color: lighten(@input-background-color, 10%);
 		}
@@ -42,6 +44,9 @@ body .settings-view {
 			border: 1p solid @input-border-color;
 			.cursor {
 				border-color: @text-color-highlight;
+			}
+			&.editor-colors .selection .region {
+				background-color: desaturate(@background-color-info, 50%);
 			}
 		}
 
