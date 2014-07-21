@@ -2,7 +2,7 @@
   "name": "themed-settings",
   "main": "./lib/themed-settings",
   "version": "0.3.0",
-  "description": "Make the settings view match your Atom UI theme.",
+  "description": "# themed-settings package\n\nMake the settings view match your Atom UI theme.\n\n![Settings view with Atom Dark UI theme](screenshot.png)\n",
   "repository": "https://github.com/postcasio/themed-settings",
   "license": "MIT",
   "engines": {
