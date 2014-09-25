@@ -139,6 +139,12 @@ body .settings-view {
 		border-color: @base-border-color;
 	}
 
+	.config-menu .panels-packages li.active {
+		a, a:hover {
+			box-shadow: 0 0 0 1px darken(@background-color-selected, 6%) !important;
+		}
+	}
+
 	.error-message .error-details {
 		background: @inset-panel-background-color;
 		border: @inset-panel-border-color;
