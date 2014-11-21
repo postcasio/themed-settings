@@ -43,15 +43,16 @@ body .settings-view {
 			.cursor {
 				border-color: @text-color-highlight;
 			}
-			&.is-focused {
-				background: lighten(@input-background-color, 5%);
-				border: 1px solid @input-border-color;
-				.cursor {
-					border-color: @text-color-highlight;
-				}
-				&.editor-colors .selection .region {
-					background-color: desaturate(@background-color-info, 50%);
-				}
+		}
+
+		&.is-focused, &.is-focused::shadow {
+			background: lighten(@input-background-color, 5%);
+			border: 1px solid @input-border-color;
+			.cursor {
+				border-color: @text-color-highlight;
+			}
+			&.editor-colors .selection .region {
+				background-color: desaturate(@background-color-info, 50%);
 			}
 		}
 
