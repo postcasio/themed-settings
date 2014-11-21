@@ -28,27 +28,30 @@ body .settings-view {
 
 	}
 
-	.editor-container .editor.mini, select.form-control {
+	.editor-container atom-text-editor.mini.mini, select.form-control {
 		background: @input-background-color;
 		border: 1px solid @input-border-color;
 		color: @text-color;
-		.text {
-			color: @text-color-highlight;
-		}
-		.selection .region {
-			background-color: lighten(@input-background-color, 10%);
-		}
-		.cursor {
-			border-color: @text-color-highlight;
-		}
-		&.is-focused {
-			background: lighten(@input-background-color, 5%);
-			border: 1px solid @input-border-color;
+
+		&, &::shadow {
+			.text {
+				color: @text-color-highlight;
+			}
+			.selection .region {
+				background-color: lighten(@input-background-color, 10%);
+			}
 			.cursor {
 				border-color: @text-color-highlight;
 			}
-			&.editor-colors .selection .region {
-				background-color: desaturate(@background-color-info, 50%);
+			&.is-focused {
+				background: lighten(@input-background-color, 5%);
+				border: 1px solid @input-border-color;
+				.cursor {
+					border-color: @text-color-highlight;
+				}
+				&.editor-colors .selection .region {
+					background-color: desaturate(@background-color-info, 50%);
+				}
 			}
 		}
 
