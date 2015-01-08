@@ -9,6 +9,8 @@ class MessagePanel extends HTMLElement
 
 	attach: ->
 		@panel = atom.workspace.addBottomPanel item: this
+		@style.display = 'block'
+		@style.padding = window.getComputedStyle(this).padding
 
 	destroy: ->
 		@panel.destroy()
