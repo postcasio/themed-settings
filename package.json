@@ -8,5 +8,7 @@
   "engines": {
     "atom": ">=0.145.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "semver": "^4.2.0"
+  }
 }
